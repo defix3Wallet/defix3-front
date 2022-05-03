@@ -6,10 +6,8 @@
 
     <dashboard-core-view style="background-color:white;" />
 
-    <dashboard-core-settings />
-    <v-content>
-      <dashboard-core-footer style="background-color:white;" />
-    </v-content>
+    <!-- <dashboard-core-settings /> -->
+    <dashboard-core-footer />
   </v-app>
 </template>
 
@@ -20,7 +18,7 @@
     components: {
       DashboardCoreAppBar: () => import('./components/core/AppBar'),
       // DashboardCoreDrawer: () => import('./components/core/Drawer'),
-      DashboardCoreSettings: () => import('./components/core/Settings'),
+      // DashboardCoreSettings: () => import('./components/core/Settings'),
       DashboardCoreView: () => import('./components/core/View'),
       DashboardCoreFooter: () => import('./components/core/Footer'),
     },

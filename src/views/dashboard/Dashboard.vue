@@ -1,187 +1,180 @@
 <template>
-  <div>
-    <v-parallax
-      src="../../assets/img/home/depositphotos_178216740-stock-photo-office-corporate-mockup-design-3d.jpg"
-    >
-      <v-row
-        align="center"
-        justify="center"
+  <div class="container mt-12">
+    <aside class="text-h1 font-weight-bold text-center mt-10">
+      Mis Certificados
+    </aside>
+    <v-row class="mt-5">
+      <v-col
+        v-for="item, i in itemsCertificados"
+        :key="i"
+        class="col-3"
       >
-        <v-col
-          class="text-center"
-          cols="12"
-        >
-          <h1 class="text-h4 font-weight-thin mb-4">
-            Vuetify
-          </h1>
-          <h4 class="subheading">
-            Build your application today!
-          </h4>
-        </v-col>
-      </v-row>
-    </v-parallax>
-    <v-container>
-      <v-col :cols="12">
-        <v-card-text
-          tile
-          outlined
-        >
-          <v-card-title class="subheading ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate rerum.
-          </v-card-title>
-          <v-row>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
+        <v-card class="mx-auto">
+          <v-img
+            class="white--text align-end"
+            height="200px"
+            :src="item.img"
+          />
+
+          <v-card-actions>
+            <v-btn
+              color="orange"
+              text
             >
-              <v-card>
-                <v-img
-                  v-animate-onscroll="'animate__animated animate__backInLeft'"
-                  :src="require('../../assets/img/home/diseno-webs-corporativas-barcelona-destacada.jpg')"
-                  class="white--text align-center generoImg"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                />
-              </v-card>
-            </v-col>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card-text v-animate-onscroll="'animate__animated animate__backInUp'">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-              </v-card-text>
-            </v-col>
-          </v-row>
-        </v-card-text>
+              Mint
+            </v-btn>
+          </v-card-actions>
+        </v-card>
       </v-col>
-    </v-container>
-    <v-container>
-      <v-col :cols="12">
-        <v-card-text
-          tile
-          outlined
-        >
-          <v-card-title class="subheading ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate rerum.
-          </v-card-title>
-          <v-row>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card-text v-animate-onscroll="'animate__animated animate__backInUp'">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-              </v-card-text>
-            </v-col>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card>
-                <v-img
-                  v-animate-onscroll="'animate__animated animate__backInLeft'"
-                  :src="require('../../assets/img/home/diseno-webs-corporativas-barcelona-destacada.jpg')"
-                  class="white--text align-center generoImg"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                />
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-card-text>
+    </v-row>
+    <v-row class="mt-10">
+      <v-col class="col-6 offset-3">
+        <aside class="text-h2 font-weight-medium text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </aside>
       </v-col>
-    </v-container>
-    <v-container>
-      <v-col :cols="12">
-        <v-card-text
-          tile
-          outlined
-        >
-          <v-card-title class="subheading ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate rerum.
-          </v-card-title>
-          <v-row>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card>
-                <v-img
-                  v-animate-onscroll="'animate__animated animate__backInLeft'"
-                  :src="require('../../assets/img/home/diseno-webs-corporativas-barcelona-destacada.jpg')"
-                  class="white--text align-center generoImg"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                />
-              </v-card>
-            </v-col>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card-text v-animate-onscroll="'animate__animated animate__backInUp'">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-              </v-card-text>
-            </v-col>
-          </v-row>
-        </v-card-text>
-      </v-col>
-    </v-container>
-    <v-parallax
-      height="300"
-      src="../../assets/img/home/17B18EEA-1136-4D9D-B630-CF30F0E8BEB6-1024x637.jpeg"
-    >
-      <v-container>
+    </v-row>
+    <v-row>
+      <v-col class="col-8 offset-2 text-center">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quasi earum quod labore repellat, beatae in minima voluptates quisquam animi officia pariatur explicabo omnis temporibus corporis quae, odio veniam. Illo?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, deleniti obcaecati sed facilis, iste, ipsa voluptates suscipit ullam dolore quos sunt culpa officia vitae error quo at in eum commodi!
         </p>
-      </v-container>
-    </v-parallax>
-    <v-container>
-      <v-col :cols="12">
-        <v-card-text
-          tile
+        <v-btn
+          class="ma-2 mt-5"
+          rounded
           outlined
+          large
         >
-          <v-card-title class="subheading ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate rerum.
-          </v-card-title>
-          <v-row>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card-text v-animate-onscroll="'animate__animated animate__backInUp'">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet reiciendis beatae dignissimos, laborum debitis. Corrupti totam facere, excepturi aperiam quae numquam maiores fuga quisquam suscipit. Nesciunt ab dignissimos quam.
-                </p>
-              </v-card-text>
-            </v-col>
-            <v-col
-              class="col-md-6 col-sm-6 col-xs-12"
-            >
-              <v-card>
-                <v-img
-                  v-animate-onscroll="'animate__animated animate__backInLeft'"
-                  :src="require('../../assets/img/home/diseno-webs-corporativas-barcelona-destacada.jpg')"
-                  class="white--text align-center generoImg"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                />
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-card-text>
+          Certificate
+        </v-btn>
       </v-col>
-    </v-container>
+    </v-row>
+    <v-row>
+      <v-col class="col-3">
+        <v-card class="mx-auto">
+          <v-container>
+            <v-card-title>
+              <v-avatar
+                color="blue"
+                size="56"
+              >
+                <v-icon>mdi-database</v-icon>
+              </v-avatar>
+              <p class="text-h3 font-weight-medium mt-4">
+                NEAR Certified Analyst
+              </p>
+            </v-card-title>
+            <v-card-text class="mt-4">
+              <aside class="text-subtitle-1">
+                Este curso es una oportunidad para que los usuarios técnicos y no técnicos aprendan sobre el potencial de la Web Abierta y propongan soluciones significativas para el desarrollo.
+              </aside>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                text
+                color="teal accent-4"
+                @click="reveal = true"
+              >
+                Learn More
+              </v-btn>
+            </v-card-actions>
+          </v-container>
+        </v-card>
+      </v-col>
+      <v-col class="col-3">
+        <v-card class="mx-auto">
+          <v-container>
+            <v-card-title>
+              <v-avatar
+                color="blue"
+                size="56"
+              >
+                <v-icon>mdi-xml</v-icon>
+              </v-avatar>
+              <p class="text-h3 font-weight-medium mt-4">
+                NEAR Certified Developers
+              </p>
+            </v-card-title>
+            <v-card-text class="mt-4">
+              <aside class="text-subtitle-1">
+                Este curso es una oportunidad para que desarrolladores web obtengan la capacidad de diseñar, desarrollar, probar e implementar contratos inteligentes en la plataforma NEAR.
+              </aside>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                text
+                color="teal accent-4"
+                @click="reveal = true"
+              >
+                Learn More
+              </v-btn>
+            </v-card-actions>
+          </v-container>
+        </v-card>
+      </v-col>
+      <v-col class="col-3">
+        <v-card class="mx-auto">
+          <v-container>
+            <v-card-title>
+              <v-avatar
+                color="blue"
+                size="56"
+              >
+                <v-icon>mdi-school</v-icon>
+              </v-avatar>
+              <p class="text-h3 font-weight-medium text-left mt-4">
+                NEAR Certified Professors
+              </p>
+            </v-card-title>
+            <v-card-text class="mt-4">
+              <aside class="text-subtitle-1">
+                Este curso es una oportunidad para educadores y profesores de aprender cómo enseñar la tecnología de NEAR en sus comunidades, escuelas o universidades.
+              </aside>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                text
+                color="teal accent-4"
+                @click="reveal = true"
+              >
+                Learn More
+              </v-btn>
+            </v-card-actions>
+          </v-container>
+        </v-card>
+      </v-col>
+      <v-col class="col-3">
+        <v-card class="mx-auto">
+          <v-container>
+            <v-card-title>
+              <v-avatar
+                color="blue"
+                size="56"
+              >
+                <v-icon>mdi-human-male-board</v-icon>
+              </v-avatar>
+              <p class="text-h3 font-weight-medium mt-4">
+                NEAR Certified Instructors
+              </p>
+            </v-card-title>
+            <v-card-text class="mt-4">
+              <aside class="text-subtitle-1">
+                Este curso prepara a miembros ambiciosos de la comunidad para diseñar y dirigir sus propios cursos, por lo que se requiere al menos otra certificación NEAR antes de tomar este curso.
+              </aside>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                text
+                color="teal accent-4"
+                @click="reveal = true"
+              >
+                Learn More
+              </v-btn>
+            </v-card-actions>
+          </v-container>
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -192,7 +185,12 @@
 
     data () {
       return {
-        itemsCarousel: [],
+        itemsCertificados: [
+          { img: require('../../assets/certificado.png') },
+          { img: require('../../assets/certificado.png') },
+          { img: require('../../assets/certificado.png') },
+          { img: require('../../assets/certificado.png') },
+        ],
       }
     },
     mounted () {
