@@ -23,10 +23,23 @@ import i18n from './i18n'
 import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import VueAnimateOnScroll from 'vue-animate-onscroll'
+// import GAuth from 'vue-google-oauth2'
+import Viewer from 'v-viewer'
+import 'viewerjs/dist/viewer.css'
+import VueQRCodeComponent from 'vue-qr-generator'
 
+// const gauthOption = {
+//   clientId: 'CLIENT_ID.apps.googleusercontent.com',
+//   scope: 'profile email',
+//   prompt: 'select_account',
+// }
+
+// Vue.use(GAuth, gauthOption)
+Vue.use(Viewer, { defaultOptions: { zIndex: 9999 } })
 Vue.config.productionTip = false
 Vue.use(VueSweetalert2)
 Vue.use(VueAnimateOnScroll)
+Vue.component('qr-code', VueQRCodeComponent)
 
 new Vue({
   router,

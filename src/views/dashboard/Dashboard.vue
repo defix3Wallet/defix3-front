@@ -9,22 +9,38 @@
         :key="i"
         class="col-3"
       >
-        <v-card class="mx-auto">
-          <v-img
-            class="white--text align-end"
-            height="200px"
-            :src="item.img"
-          />
-
-          <v-card-actions>
-            <v-btn
-              color="orange"
-              text
-            >
-              Mint
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+        <viewer>
+          <v-card class="mx-auto">
+            <v-img
+              class="white--text align-end"
+              height="200px"
+              :src="item.img"
+            />
+            <v-card-actions>
+              <v-btn
+                color="orange"
+                text
+              >
+                Mintear
+              </v-btn>
+              <v-btn
+                :href="item.img"
+                download
+                color="orange"
+                text
+              >
+                Descargar
+              </v-btn>
+              <!-- <a
+                :href="item.img"
+                download
+                class="btn btn-success"
+              >
+                Descargar imagen
+              </a> -->
+            </v-card-actions>
+          </v-card>
+        </viewer>
       </v-col>
     </v-row>
     <v-row class="mt-10">
@@ -49,7 +65,8 @@
         </v-btn>
       </v-col>
     </v-row>
-    <v-row>
+    <qr-code text="este es el texto del qr" />
+    <!-- <v-row>
       <v-col class="col-3">
         <v-card class="mx-auto">
           <v-container>
@@ -174,7 +191,7 @@
           </v-container>
         </v-card>
       </v-col>
-    </v-row>
+    </v-row> -->
   </div>
 </template>
 
